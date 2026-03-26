@@ -9,15 +9,23 @@
         <a href="seguros.html">Seguros</a>
     </nav>
 </header>
+
 <div class="container">
     <article>
-        <h1>Calculadora de Inversión</h1>
-        <div style="background: #101827; color: white; padding: 20px; border-radius: 10px;">
-            <input type="number" id="cap" placeholder="Capital" style="width:100%; padding:10px; margin-bottom:10px;">
-            <button onclick="calc()" style="width:100%; background: #10B981; color: white; border: none; padding: 10px; font-weight: bold;">CALCULAR</button>
-            <h2 id="res" style="text-align:center; margin-top:10px;">$0.00</h2>
+        <h1>Calculadora de Interés Compuesto</h1>
+        <div style="background:var(--azul); color:white; padding:30px; border-radius:12px; margin-top:20px;">
+            <label>Inversión Inicial (€)</label>
+            <input type="number" id="capital" style="width:100%; padding:10px; margin:10px 0; border-radius:5px;">
+            <button onclick="calcular()" style="width:100%; padding:15px; background:var(--verde); color:white; border:none; font-weight:700; border-radius:5px; cursor:pointer;">CALCULAR FUTURO</button>
+            <h2 id="resultado" style="text-align:center; margin-top:20px; color:var(--verde);">$0.00</h2>
         </div>
     </article>
 </div>
-<script>function calc(){ let v = document.getElementById('cap').value; document.getElementById('res').innerText = '$' + (v * 1.08).toFixed(2); }</script>
+<script>
+    function calcular() {
+        let cap = document.getElementById('capital').value;
+        let res = cap * Math.pow(1.08, 10); // Ejemplo a 10 años al 8%
+        document.getElementById('resultado').innerText = res.toLocaleString('es-ES', {style: 'currency', currency: 'EUR'});
+    }
+</script>
 </body>
