@@ -1,24 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ahorro | Prosperidad Inteligente</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root { --azul: #101827; --verde: #10B981; --gris: #F9FAFB; --blanco: #FFFFFF; }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: 'Poppins', sans-serif; background: var(--gris); color: #4B5563; line-height: 1.6; }
+        header { background: var(--azul); padding: 1rem 8%; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; z-index: 1000; }
+        .logo { color: white; font-size: 1.4rem; font-weight: 700; text-decoration: none; }
+        .logo strong { color: var(--verde); }
+        nav a { color: rgba(255,255,255,0.8); text-decoration: none; font-size: 0.9rem; margin-left: 20px; padding: 8px 15px; border-radius: 8px; transition: 0.3s; border: 1px solid transparent; }
+        .nav-active { background: rgba(16, 185, 129, 0.2); border: 1px solid var(--verde) !important; color: white !important; }
+        .container { max-width: 1000px; margin: 40px auto; padding: 0 20px; }
+        article { background: white; padding: 40px; border-radius: 15px; box-shadow: 0 10px 25px rgba(0,0,0,0.05); }
+        h1 { color: var(--azul); margin-bottom: 20px; }
+        .highlight { border-left: 5px solid var(--verde); background: #f0fdf4; padding: 20px; border-radius: 10px; margin: 20px 0; }
+        footer { background: #111; color: white; padding: 30px; text-align: center; margin-top: 50px; }
+    </style>
+</head>
+<body>
+<header>
+    <a href="index.html" class="logo">PROSPERIDAD <strong>INTELIGENTE</strong></a>
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="ahorro.html" class="nav-active">Ahorro</a>
+        <a href="inversion.html">Inversión</a>
+        <a href="prestamos.html">Préstamos</a>
+        <a href="seguros.html">Seguros</a>
+    </nav>
+</header>
 <div class="container">
     <article>
-        <span style="color:var(--verde); font-weight:700; font-size:0.8rem; text-transform:uppercase;">Estrategia de Éxito</span>
-        <h1 style="margin:10px 0 25px 0;">Cómo ahorrar 500€ al mes: El Plan Maestro</h1>
-        <img src="https://images.unsplash.com/photo-1564939558297-fc396f18e5c7?q=80&w=1000" style="width:100%; border-radius:15px; margin-bottom:30px;">
-        
-        <p>Ahorrar una cifra significativa cada mes no requiere un sueldo de seis cifras, requiere <strong>metodología</strong>. Aquí tienes los tres pilares:</p>
-        
-        <div style="margin:30px 0; padding:25px; background:#f9fafb; border-radius:12px; border-left:5px solid var(--verde);">
-            <h3>1. La Regla del 50/30/20 Optimizada</h3>
-            <p>Divide tus ingresos: 50% Necesidades, 30% Deseos y 20% Ahorro. Si reduces tus "deseos" al 15% temporalmente, alcanzarás tu meta mucho antes.</p>
+        <h1>Cómo Ahorrar 500€ al Mes</h1>
+        <img src="https://images.unsplash.com/photo-1564939558297-fc396f18e5c7?q=80&w=800" style="width:100%; border-radius:12px; margin-bottom:25px;">
+        <p>Ahorrar no es solo guardar dinero, es **optimizar tus gastos**. Aquí tienes los pasos clave:</p>
+        <div class="highlight">
+            <h3>Paso 1: Auditoría de Gastos Hormiga</h3>
+            <p>Suscripciones que no usas, cafés diarios y comidas fuera. Identifica y recorta.</p>
         </div>
-
-        <h3>2. El Reto de las 52 Semanas</h3>
-        <p>Empieza ahorrando 1€ la primera semana, 2€ la segunda... Al final del año habrás acumulado una base sólida casi sin darte cuenta.</p>
-
-        <div style="text-align:center; margin:40px 0; padding:30px; border:2px dashed #ddd; border-radius:15px;">
-            <p style="color:#999; font-size:0.8rem; margin-bottom:10px;">PUBLICIDAD RECOMENDADA</p>
-            <div style="background:#eee; height:100px; display:flex; align-items:center; justify-content:center; color:#777;">BANNER ADSENSE</div>
-        </div>
-
-        <button onclick="window.location.href='inversion.html'" style="background:var(--azul); color:white; padding:15px 30px; border:none; border-radius:8px; cursor:pointer; font-weight:bold; width:100%;">¿YA HAS AHORRADO? APRENDE A INVERTIRLO →</button>
+        <p>Utiliza la regla del 50/30/20 para dividir tu salario de forma automática apenas lo recibas.</p>
+        <button onclick="window.location.href='inversion.html'" style="background:var(--verde); color:white; padding:15px; border:none; border-radius:8px; cursor:pointer; font-weight:700; width:100%; margin-top:20px;">¿YA TIENES EL DINERO? APRENDE A INVERTIRLO →</button>
     </article>
 </div>
+<footer><p>&copy; 2026 Prosperidad Inteligente</p></footer>
+</body>
+</html>
