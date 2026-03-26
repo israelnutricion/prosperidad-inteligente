@@ -1,16 +1,178 @@
-<main>
-    <article>
-        <h1>Guía de Préstamos: Cómo Elegir el Crédito Menos Caro</h1>
-        <p>No todos los créditos son malos, pero un crédito mal elegido puede destruir tus finanzas por años.</p>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guía de Préstamos: Cómo Elegir el Crédito Menos Caro | Prosperidad Inteligente</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            /* Paleta de colores solicitada: Profesional y Confiable */
+            --azul-marino: #1B263B;    /* Fondo Header, Títulos */
+            --verde-dinero: #2D6A4F;    /* CTAs, Enlaces, Acento */
+            --gris-fondo: #F8F9FA;      /* Fondo general */
+            --blanco: #FFFFFF;
+            --texto-suave: #495057;
+            --sombra: 0 4px 15px rgba(0,0,0,0.08);
+        }
 
-        <div class="adsense-placeholder" style="width: 728px; height: 90px; margin: 20px auto;">Banner AdSense High CPM</div>
+        * { box-sizing: border-box; }
+        body { font-family: 'Roboto', sans-serif; margin: 0; background-color: var(--gris-fondo); color: #333; line-height: 1.8; }
+        
+        /* Layout y Navegación */
+        header { background: var(--azul-marino); padding: 1.2rem 8%; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; z-index: 1000; box-shadow: var(--sombra); }
+        .logo { color: var(--blanco); font-size: 1.6rem; font-weight: 700; text-decoration: none; text-transform: uppercase; letter-spacing: 1px; }
+        .logo strong { color: var(--verde-dinero); }
+        nav { display: flex; gap: 20px; }
+        nav a { color: rgba(255,255,255,0.85); text-decoration: none; font-size: 0.95rem; font-weight: 500; transition: color 0.3s; }
+        nav a:hover { color: var(--blanco); }
 
-        <h2>Tipos de Créditos Disponibles</h2>
-        <table>
-            <tr><th>Tipo de Crédito</th><th>Tasa Promedio</th><th>Recomendación</th></tr>
-            <tr><td>Hipotecario</td><td>8% - 12%</td><td>Para activos que suben de valor.</td></tr>
-            <tr><td>Personal</td><td>15% - 35%</td><td>Solo para emergencias reales.</td></tr>
-            <tr><td>Tarjetas</td><td>40% - 80%</td><td>Pagar el total cada mes siempre.</td></tr>
-        </table>
-    </article>
-</main>
+        /* Contenedor Universal de Anuncios - Optimizado para CPM */
+        .adsense-placeholder { background: #f1f3f5; border: 1px solid #dee2e6; margin: 25px auto; display: flex; align-items: center; justify-content: center; color: #adb5bd; text-transform: uppercase; font-size: 11px; letter-spacing: 1px; font-weight: bold; border-radius: 4px; }
+
+        /* Contenedor Principal */
+        .container { padding: 50px 8%; max-width: 1000px; margin: auto; }
+        
+        /* DISEÑO DE PÁGINA DE ARTÍCULO */
+        article { background: var(--blanco); padding: 50px; border-radius: 12px; box-shadow: var(--sombra); }
+        article h1 { color: var(--azul-marino); font-size: 2.8rem; margin-top: 0; margin-bottom: 20px; font-weight: 700; }
+        article h2 { color: var(--azul-marino); font-size: 2rem; margin-top: 40px; border-left: 6px solid var(--verde-dinero); padding-left: 15px; font-weight: 700; }
+        article p { color: var(--texto-suave); font-size: 1.15rem; margin-bottom: 25px; }
+
+        /* Imagen Principal del Artículo */
+        .article-main-img { width: 100%; height: 400px; object-fit: cover; border-radius: 10px; margin-bottom: 40px; }
+
+        /* --- DISEÑO PROFESIONAL DE LA TABLA --- */
+        table.finanzas-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 30px 0;
+            font-size: 1rem;
+            min-width: 400px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        table.finanzas-table thead tr {
+            background-color: var(--azul-marino);
+            color: #ffffff;
+            text-align: left;
+            font-weight: bold;
+        }
+        table.finanzas-table th, table.finanzas-table td {
+            padding: 15px 20px;
+        }
+        table.finanzas-table tbody tr {
+            border-bottom: 1px solid #dddddd;
+        }
+        table.finanzas-table tbody tr:nth-of-type(even) {
+            background-color: #f3f3f3;
+        }
+        table.finanzas-table tbody tr:last-of-type {
+            border-bottom: 3px solid var(--verde-dinero);
+        }
+        table.finanzas-table tbody tr.active-row {
+            font-weight: bold;
+            color: var(--verde-dinero);
+        }
+        
+        /* Etiqueta de Tasa (El Verde Dinero) */
+        .rate-tag {
+            background-color: var(--verde-dinero);
+            color: white;
+            padding: 5px 10px;
+            border-radius: 20px;
+            font-weight: bold;
+            font-size: 0.9rem;
+        }
+
+        /* FOOTER */
+        footer { background: #111; color: rgba(255,255,255,0.7); padding: 50px 8%; text-align: center; margin-top: 60px; font-size: 0.9rem; }
+        footer a { color: rgba(255,255,255,0.9); text-decoration: none; margin: 0 10px; }
+        footer a:hover { color: var(--verde-dinero); text-decoration: underline; }
+        
+        /* Responsividad */
+        @media (max-width: 1024px) { article h1 { font-size: 2.2rem; } table.finanzas-table { font-size: 0.9rem; } }
+    </style>
+</head>
+<body>
+
+<header>
+    <a href="index.html" class="logo">PROSPERIDAD <strong>INTELIGENTE</strong></a>
+    <nav>
+        <a href="ahorro.html">Ahorro</a> 
+        <a href="inversion.html">Inversión</a> 
+        <a href="prestamos.html">Préstamos</a>
+        <a href="seguros.html">Seguros</a>
+    </nav>
+</header>
+
+<div class="adsense-placeholder" style="width: 728px; height: 90px;">Publicidad AdSense (728x90)</div>
+
+<div class="container">
+    <main>
+        <article>
+            <img src="https://images.unsplash.com/photo-1553729459-efe14ef6055d?q=80&w=1200&auto=format&fit=crop" alt="Pila de dinero y trato" class="article-main-img">
+            
+            <h1>Guía de Préstamos: Cómo Elegir el Crédito Menos Caro</h1>
+            <p>No todos los créditos son malos, pero un crédito mal elegido puede destruir tus finanzas por años. La clave no es *si* debes pedir un préstamo, sino *cómo* elegirlo para que no se convierta en una trampa de deuda.</p>
+            
+            <div class="adsense-placeholder" style="width: 300px; height: 250px; float: left; margin-right: 25px; margin-top: 10px;">AdSense (300x250)</div>
+            
+            <p>Muchos usuarios cometen el error de mirar solo la cuota mensual. Esto es un error grave. El costo real del dinero está en la tasa de interés y los cargos asociados (el CAT). En esta guía, aprenderás a compararlos.</p>
+            
+            <h2>Tipos de Créditos Disponibles: Comparativa 2026</h2>
+            <p>No todos los créditos son iguales. Su tasa de interés depende del riesgo que corre el banco. A continuación, te mostramos una tabla profesional para ayudarte a visualizar estas diferencias:</p>
+            
+            <table class="finanzas-table">
+                <thead>
+                    <tr>
+                        <th>Tipo de Crédito</th>
+                        <th>Tasa Promedio</th>
+                        <th>Recomendación y Uso Ideal</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Hipotecario</strong></td>
+                        <td><span class="rate-tag">8% - 12%</span></td>
+                        <td>Para adquirir activos que *suben* de valor (vivienda). El mejor tipo de deuda.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Automotriz</strong></td>
+                        <td><span class="rate-tag">10% - 15%</span></td>
+                        <td>Para un auto. Busca tasas bajas porque el auto *pierde* valor.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Préstamo Personal</strong></td>
+                        <td><span class="rate-tag">15% - 35%</span></td>
+                        <td>Solo para emergencias reales o consolidar deudas más caras. Tasa alta.</td>
+                    </tr>
+                    <tr class="active-row">
+                        <td><strong>Tarjetas de Crédito</strong></td>
+                        <td><span class="rate-tag">40% - 80%</span></td>
+                        <td>Úsalas para flujo de caja y *paga el total* cada mes. La deuda más peligrosa.</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h2>Cómo Usar esta Tabla</h2>
+            <p>La regla de oro de la prosperidad inteligente es simple: **No uses deuda de alto interés (como tarjetas o préstamos personales) para comprar cosas que no suben de valor.** Si usas la tabla como guía, estarás por delante del 90% de la población.</p>
+        
+            <div class="adsense-placeholder" style="width: 100%; height: 120px; margin-top: 40px;">AdSense In-Feed / Matched Content</div>
+        </article>
+    </main>
+</div>
+
+<footer>
+    <div class="adsense-placeholder" style="width: 300px; height: 250px;">AdSense Footer</div>
+    <p>&copy; 2026 Prosperidad Inteligente. Todos los derechos reservados.</p>
+    <p>
+        <a href="privacidad.html">Privacidad</a> | 
+        <a href="terminos.html">Términos</a> | 
+        <a href="contacto.html">Contacto</a>
+    </p>
+</footer>
+
+</body>
+</html>
