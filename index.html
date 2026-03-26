@@ -3,110 +3,175 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Prosperidad Inteligente | Toma el control de tu futuro financiero</title>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <title>Prosperidad Inteligente | Guías Expertas de Finanzas Personales</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     <style>
         :root {
-            --azul-marino: #1B263B;
-            --verde-dinero: #2D6A4F;
-            --gris-fondo: #F8F9FA;
+            /* Paleta de colores solicitada: Profesional y Confiable */
+            --azul-marino: #1B263B;    /* Fondo Header, Títulos */
+            --verde-dinero: #2D6A4F;    /* CTAs, Enlaces, Acento */
+            --gris-fondo: #F8F9FA;      /* Fondo general */
             --blanco: #FFFFFF;
+            --texto-suave: #495057;
+            --sombra: 0 4px 15px rgba(0,0,0,0.08);
         }
 
-        body { font-family: 'Montserrat', sans-serif; margin: 0; background-color: var(--gris-fondo); color: #333; line-height: 1.6; }
+        * { box-sizing: border-box; }
+        body { font-family: 'Roboto', sans-serif; margin: 0; background-color: var(--gris-fondo); color: #333; line-height: 1.8; }
         
-        /* Layout */
-        header { background: var(--azul-marino); color: white; padding: 1rem 5%; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; z-index: 1000; }
-        nav a { color: white; text-decoration: none; margin-left: 15px; font-size: 0.9rem; font-weight: bold; }
+        /* Layout y Navegación */
+        header { background: var(--azul-marino); padding: 1.2rem 8%; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; z-index: 1000; box-shadow: var(--sombra); }
+        .logo { color: var(--blanco); font-size: 1.6rem; font-weight: 700; text-decoration: none; text-transform: uppercase; letter-spacing: 1px; }
+        .logo strong { color: var(--verde-dinero); }
+        nav { display: flex; gap: 20px; }
+        nav a { color: rgba(255,255,255,0.85); text-decoration: none; font-size: 0.95rem; font-weight: 500; transition: color 0.3s; }
+        nav a:hover { color: var(--blanco); }
+
+        /* Contenedor Universal de Anuncios - Optimizado para CPM */
+        .adsense-placeholder { background: #f1f3f5; border: 1px solid #dee2e6; margin: 25px auto; display: flex; align-items: center; justify-content: center; color: #adb5bd; text-transform: uppercase; font-size: 11px; letter-spacing: 1px; font-weight: bold; border-radius: 4px; }
+
+        /* HERO SECTION - Con Foto Inspiradora */
+        .hero { 
+            background: linear-gradient(rgba(27, 38, 59, 0.85), rgba(27, 38, 59, 0.95)), 
+                        url('https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?q=80&w=2000&auto=format&fit=crop'); 
+            background-size: cover; 
+            background-position: center;
+            color: white; 
+            padding: 120px 10%; 
+            text-align: center; 
+        }
+        .hero h1 { font-size: 3rem; margin-bottom: 15px; font-weight: 700; line-height: 1.2; }
+        .hero p { font-size: 1.25rem; font-weight: 300; max-width: 700px; margin: 0 auto 30px; color: rgba(255,255,255,0.9); }
+        .btn-cta { background: var(--verde-dinero); color: white; padding: 18px 35px; border: none; border-radius: 50px; cursor: pointer; font-size: 1.1rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; transition: transform 0.2s, box-shadow 0.2s; }
+        .btn-cta:hover { transform: translateY(-3px); box-shadow: 0 10px 20px rgba(45, 106, 79, 0.3); }
+
+        /* Contenedor Principal (Artículo + Sidebar) */
+        .container { display: grid; grid-template-columns: 2.5fr 1fr; gap: 40px; padding: 50px 8%; max-width: 1400px; margin: auto; }
         
-        .adsense-placeholder { background: #ebebeb; border: 1px dashed #bbb; margin: 20px auto; display: flex; align-items: center; justify-content: center; color: #888; text-transform: uppercase; font-size: 12px; }
+        /* DISEÑO DE PÁGINA DE ARTÍCULO */
+        article { background: var(--blanco); padding: 40px; border-radius: 12px; box-shadow: var(--sombra); }
+        article h1 { color: var(--azul-marino); font-size: 2.5rem; margin-top: 0; }
+        article h2 { color: var(--azul-marino); font-size: 1.8rem; margin-top: 40px; border-left: 5px solid var(--verde-dinero); padding-left: 15px; }
+        article p { color: var(--texto-suave); font-size: 1.1rem; }
 
-        /* Hero Section */
-        .hero { background: linear-gradient(rgba(27, 38, 59, 0.8), rgba(27, 38, 59, 0.8)), url('https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?auto=format&fit=crop&w=1350&q=80'); 
-                background-size: cover; color: white; padding: 100px 10%; text-align: center; }
-        .hero h1 { font-size: 2.5rem; margin-bottom: 10px; }
-        .btn-cta { background: var(--verde-dinero); color: white; padding: 15px 30px; border: none; border-radius: 5px; cursor: pointer; font-size: 1.1rem; font-weight: bold; }
+        /* Imagen Principal del Artículo */
+        .article-main-img { width: 100%; height: 400px; object-fit: cover; border-radius: 8px; margin-bottom: 30px; }
 
-        /* Main Content & Sidebar */
-        .container { display: grid; grid-template-columns: 2fr 1fr; gap: 30px; padding: 40px 5%; max-width: 1200px; margin: auto; }
-        article { background: var(--blanco); padding: 30px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); }
-        aside { position: sticky; top: 80px; height: fit-content; }
-
-        .newsletter-box { background: var(--azul-marino); color: white; padding: 20px; border-radius: 8px; text-align: center; margin-bottom: 20px; }
-        .newsletter-box input { width: 90%; padding: 10px; margin-top: 10px; }
-
-        footer { background: #111; color: white; padding: 40px 5%; text-align: center; margin-top: 50px; }
+        /* SIDEBAR (Sticky) */
+        aside { position: sticky; top: 100px; height: fit-content; }
         
-        @media (max-width: 768px) { .container { grid-template-columns: 1fr; } }
+        /* Newsletter Box - Usando el Azul Marino y Verde */
+        .newsletter-box { background: var(--azul-marino); color: white; padding: 30px; border-radius: 12px; text-align: center; margin-bottom: 30px; box-shadow: var(--sombra); }
+        .newsletter-box h3 { margin-top: 0; color: var(--verde-dinero); font-size: 1.5rem; }
+        .newsletter-box p { font-weight: 300; font-size: 0.95rem; margin-bottom: 20px; color: rgba(255,255,255,0.9); }
+        .newsletter-box input { width: 100%; padding: 15px; margin-bottom: 15px; border: none; border-radius: 4px; }
+        .newsletter-box button { background: var(--verde-dinero); color: white; border: none; width: 100%; padding: 15px; border-radius: 4px; cursor: pointer; font-weight: 700; text-transform: uppercase; }
+
+        /* GRID DE ARTÍCULOS DESTACADOS (En el Home) */
+        .featured-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; margin-top: 50px; }
+        .featured-card { background: var(--blanco); border-radius: 8px; overflow: hidden; box-shadow: var(--sombra); transition: transform 0.3s; text-decoration: none; color: inherit; }
+        .featured-card:hover { transform: translateY(-5px); }
+        .featured-card img { width: 100%; height: 200px; object-fit: cover; }
+        .featured-card-content { padding: 20px; }
+        .featured-card h3 { margin: 0 0 10px 0; color: var(--azul-marino); font-size: 1.3rem; }
+        .featured-card p { margin: 0; color: var(--texto-suave); font-size: 0.9rem; line-height: 1.5; }
+
+        /* FOOTER */
+        footer { background: #111; color: rgba(255,255,255,0.7); padding: 50px 8%; text-align: center; margin-top: 60px; font-size: 0.9rem; }
+        footer a { color: rgba(255,255,255,0.9); text-decoration: none; margin: 0 10px; }
+        footer a:hover { color: var(--verde-dinero); text-decoration: underline; }
+        
+        /* Responsividad */
+        @media (max-width: 1024px) { .container { grid-template-columns: 1fr; } .hero h1 { font-size: 2.2rem; } }
     </style>
 </head>
 <body>
 
 <header>
-    <div class="logo">PROSPERIDAD <strong>INTELIGENTE</strong></div>
-   <nav>
-    <a href="index.html">Inicio</a>
-    <a href="ahorro.html">Ahorro</a> 
-    <a href="inversion.html">Inversión</a> 
-    <a href="prestamos.html">Préstamos</a>
-    <a href="seguros.html">Seguros</a>
-</nav>
+    <a href="index.html" class="logo">PROSPERIDAD <strong>INTELIGENTE</strong></a>
+    <nav>
+        <a href="ahorro.html">Ahorro</a> 
+        <a href="inversion.html">Inversión</a> 
+        <a href="prestamos.html">Préstamos</a>
+        <a href="seguros.html">Seguros</a>
+    </nav>
 </header>
 
-<div class="adsense-placeholder" style="width: 728px; height: 90px;">Publicidad AdSense (728x90)</div>
+<div class="adsense-placeholder" style="width: 728px; height: 90px;">Publicidad AdSense (Leaderboard)</div>
 
 <section class="hero">
     <h1>Toma el control de tu futuro financiero hoy</h1>
-    <p>Guías expertas sobre ahorro, inversión y gestión de crédito.</p>
+    <p>Guías expertas y herramientas prácticas sobre ahorro, inversión y gestión inteligente del crédito.</p>
     <button class="btn-cta">Descubre cómo ahorrar $500 al mes</button>
 </section>
 
 <div class="container">
     <main>
         <article>
-            <h1>Cómo invertir en la bolsa siendo principiante: Guía 2026</h1>
-            <p>El primer paso para la libertad financiera no es ganar más, sino gestionar mejor...</p>
+            <img src="https://images.unsplash.com/photo-1553729459-efe14ef6055d?q=80&w=1200&auto=format&fit=crop" alt="Mano contando dinero" class="article-main-img">
             
-            <div class="adsense-placeholder" style="width: 300px; height: 250px; float: left; margin-right: 20px;">AdSense (300x250)</div>
+            <h1>Cómo empezar a invertir: El primer paso hacia tu libertad financiera</h1>
+            <p>El camino hacia la prosperidad inteligente no requiere ser un experto en matemáticas o tener millones en el banco. Requiere consistencia, educación y, sobre todo, empezar hoy...</p>
             
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <div class="adsense-placeholder" style="width: 300px; height: 250px; float: left; margin-right: 25px; margin-top: 10px;">AdSense (300x250)</div>
             
-            <h2>Estrategias de Interés Compuesto</h2>
-            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur...</p>
+            <p>Muchos principiantes se sienten abrumados por la cantidad de opciones disponibles: acciones, bonos, bienes raíces, criptomonedas. La clave es entender que no necesitas apostar tu dinero; necesitas ponerlo a trabajar de manera segura y diversificada.</p>
+            
+            <h2>La Regla de Oro: Págate a ti mismo primero</h2>
+            <p>Antes de pensar en qué invertir, debes asegurar el flujo de capital. Esto significa separar al menos el 10% o 15% de tus ingresos *antes* de pagar tus cuentas. Este dinero es tu 'semilla de inversión'.</p>
+            
+            <img src="https://images.unsplash.com/photo-1591696205602-2f950c417cb9?q=80&w=800&auto=format&fit=crop" alt="Gráficos financieros" style="width:100%; height:300px; object-fit:cover; border-radius:8px; margin: 30px 0;">
 
-            <div class="adsense-placeholder" style="width: 336px; height: 280px; margin: 20px auto;">AdSense (336x280)</div>
+            <h2>Diversificación: No pongas todos los huevos en una canasta</h2>
+            <p>Incluso con poco dinero, la diversificación es posible a través de herramientas modernas como los Fondos Indexados o ETFs...</p>
+
+            <div class="adsense-placeholder" style="width: 336px; height: 280px; margin: 30px auto;">AdSense (336x280 Large Rectangle)</div>
             
-            <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p>Para la mayoría de los inversores de 'Prosperidad Inteligente', la estrategia de 'comprar y mantener' fondos que replican índices como el S&P 500 ha demostrado ser la más eficiente y menos estresante a largo plazo.</p>
+        
+            <div class="adsense-placeholder" style="width: 100%; height: 120px; margin-top: 40px;">AdSense In-Feed / Matched Content</div>
         </article>
+
+        <h2 style="color:var(--azul-marino); margin-top: 60px;">Guías Esenciales que debes leer</h2>
+        <div class="featured-grid">
+            <a href="ahorro.html" class="featured-card">
+                <img src="https://images.unsplash.com/photo-1593114072199-36782b79baf0?q=80&w=600&auto=format&fit=crop" alt="Hucha de cerdito">
+                <div class="featured-card-content">
+                    <h3>El Método 50/30/20</h3>
+                    <p>La forma más simple de organizar tu presupuesto mensual y garantizar el ahorro.</p>
+                </div>
+            </a>
+            <a href="prestamos.html" class="featured-card">
+                <img src="https://images.unsplash.com/photo-1589758438368-0ad531db3366?q=80&w=600&auto=format&fit=crop" alt="Tarjeta de crédito">
+                <div class="featured-card-content">
+                    <h3>Subir tu Score Crediticio</h3>
+                    <p>7 Pasos probados para mejorar tu historial y acceder a mejores tasas.</p>
+                </div>
+            </a>
+        </div>
     </main>
 
     <aside>
         <div class="newsletter-box">
             <h3>Guía Gratuita</h3>
             <p>Ahorra tus primeros $1,000 con nuestro método paso a paso.</p>
-            <input type="email" placeholder="Tu mejor correo">
-            <button style="background:var(--verde-dinero); border:none; color:white; padding:10px 20px; margin-top:10px; width:100%; cursor:pointer;">Suscribirme</button>
+            <input type="email" placeholder="Tu mejor correo...">
+            <button>Suscribirme</button>
         </div>
 
-        <div class="adsense-placeholder" style="width: 160px; height: 600px;">AdSense (160x600)</div>
-        
-        <div style="background:#eee; padding:15px; border-radius:8px; margin-top:20px;">
-            <h4>Calculadora de Interés Compuesto</h4>
-            <small>Próximamente funcional con JS...</small>
-        </div>
+        <div class="adsense-placeholder" style="width: 160px; height: 600px; margin: 0 auto;">AdSense (160x600 Wide Skyscraper)</div>
     </aside>
 </div>
 
 <footer>
-    <div class="adsense-placeholder" style="width: 300px; height: 250px;">Publicidad Footer</div>
+    <div class="adsense-placeholder" style="width: 300px; height: 250px;">AdSense Footer</div>
     <p>&copy; 2026 Prosperidad Inteligente. Todos los derechos reservados.</p>
-    <p><a href="#" style="color:#ccc;">Privacidad</a> | <a href="#" style="color:#ccc;">Términos</a> | <a href="#" style="color:#ccc;">Contacto</a></p>
+    <p>
+        <a href="privacidad.html">Privacidad</a> | 
+        <a href="terminos.html">Términos</a> | 
+        <a href="contacto.html">Contacto</a>
+    </p>
 </footer>
 
 </body>
 </html>
-function calcularInteres(p, r, t) {
-    // A = P(1 + r/n)^(nt)
-    return p * Math.pow((1 + r), t);
-}
-// Esto permite que el usuario juegue con los números en el sidebar.
