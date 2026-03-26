@@ -1,23 +1,37 @@
+<body>
+<header>
+    <a href="index.html" class="logo">PROSPERIDAD <strong>INTELIGENTE</strong></a>
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="ahorro.html">Ahorro</a>
+        <a href="inversion.html" class="nav-active">Inversión</a>
+        <a href="prestamos.html">Préstamos</a>
+        <a href="seguros.html">Seguros</a>
+    </nav>
+</header>
 <div class="container">
     <article>
-        <h1>Comparativa de Préstamos Personales 2026</h1>
-        <p>Encontrar el interés más bajo puede ahorrarte miles de euros a largo plazo. Analizamos las entidades más fiables de este trimestre.</p>
+        <h1>Inversión: La Guía para Principiantes</h1>
+        <p>El interés compuesto es tu mejor aliado. Calcula cuánto podrías tener en 10 años invirtiendo hoy.</p>
         
-        <div style="margin-top:30px;">
-            <div style="display:flex; justify-content:space-between; align-items:center; padding:20px; border:1px solid #eee; border-radius:10px; margin-bottom:15px;">
-                <div>
-                    <h4 style="color:var(--azul);">Préstamo Rápido Online</h4>
-                    <p style="font-size:0.8rem; color:var(--verde);">TAE desde 3.50%</p>
-                </div>
-                <button style="background:var(--verde); color:white; border:none; padding:10px 20px; border-radius:5px; cursor:pointer; font-weight:bold;">SABER MÁS</button>
-            </div>
-            <div style="display:flex; justify-content:space-between; align-items:center; padding:20px; border:1px solid #eee; border-radius:10px; margin-bottom:15px;">
-                <div>
-                    <h4 style="color:var(--azul);">Hipoteca Variable Premium</h4>
-                    <p style="font-size:0.8rem; color:var(--verde);">Euríbor + 0.40%</p>
-                </div>
-                <button style="background:var(--verde); color:white; border:none; padding:10px 20px; border-radius:5px; cursor:pointer; font-weight:bold;">COMPARAR</button>
-            </div>
+        <div style="background:var(--azul); color:white; padding:30px; border-radius:12px; margin:30px 0; text-align:center;">
+            <h3 style="color:var(--verde); margin-bottom:15px;">Calculadora de Crecimiento (8% anual)</h3>
+            <input type="number" id="cap" placeholder="Cantidad inicial (€)" style="padding:12px; width:80%; border-radius:8px; border:none; margin-bottom:15px;">
+            <button onclick="calc()" style="background:var(--verde); color:white; padding:12px 30px; border:none; border-radius:8px; cursor:pointer; font-weight:700;">CALCULAR</button>
+            <h2 id="res" style="margin-top:20px; color:var(--verde);">Total: 0.00€</h2>
         </div>
+        
+        <h3>Fondos Indexados</h3>
+        <p>La forma más inteligente y pasiva de invertir en el mercado global con comisiones mínimas.</p>
     </article>
 </div>
+<script>
+    function calc(){
+        let v = document.getElementById('cap').value;
+        let r = v * Math.pow(1.08, 10);
+        document.getElementById('res').innerText = "Total: " + r.toLocaleString('es-ES', {style: 'currency', currency: 'EUR'});
+    }
+</script>
+<footer><p>&copy; 2026 Prosperidad Inteligente</p></footer>
+</body>
+</html>
