@@ -1,23 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prosperidad Inteligente</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --azul-oscuro: #101827;
+            --verde-acento: #10B981;
+            --gris-fondo: #F9FAFB;
+            --blanco: #FFFFFF;
+            --texto: #4B5563;
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: 'Poppins', sans-serif; background: var(--gris-fondo); color: var(--texto); line-height: 1.6; }
+
+        /* --- NAVEGACIÓN ESTILO PREMIUM --- */
+        header { 
+            background: var(--azul-oscuro); 
+            padding: 1.2rem 8%; 
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center; 
+            position: sticky; 
+            top: 0; 
+            z-index: 1000; 
+        }
+        .logo { color: white; font-size: 1.4rem; font-weight: 700; text-decoration: none; }
+        .logo strong { color: var(--verde-acento); }
+        
+        nav { display: flex; gap: 10px; }
+        nav a { 
+            color: rgba(255,255,255,0.7); 
+            text-decoration: none; 
+            font-size: 0.9rem; 
+            padding: 8px 16px; 
+            border-radius: 8px; 
+            transition: all 0.3s ease; 
+            border: 1px solid transparent;
+        }
+        nav a:hover { color: white; }
+
+        /* Clase para resaltar la sección actual (Como en tu imagen) */
+        .nav-active { 
+            color: white !important; 
+            background: rgba(16, 185, 129, 0.15); 
+            border: 1px solid var(--verde-acento); 
+        }
+
+        /* --- CUERPO DE LA PÁGINA --- */
+        .container { max-width: 1200px; margin: 50px auto; padding: 0 20px; }
+        article { background: white; padding: 40px; border-radius: 15px; box-shadow: 0 10px 25px rgba(0,0,0,0.05); }
+        h1 { color: var(--azul-oscuro); margin-bottom: 20px; font-size: 2.5rem; }
+        p { margin-bottom: 20px; font-size: 1.1rem; }
+        .main-img { width: 100%; height: 400px; object-fit: cover; border-radius: 12px; margin-bottom: 30px; }
+    </style>
+</head>
+<body>
+
+<header>
+    <a href="index.html" class="logo">PROSPERIDAD <strong>INTELIGENTE</strong></a>
+    <nav>
+        <a href="index.html" id="m-inicio">Inicio</a>
+        <a href="ahorro.html" id="m-ahorro">Ahorro</a>
+        <a href="inversion.html" id="m-inversion">Inversión</a>
+        <a href="prestamos.html" id="m-prestamos">Préstamos</a>
+        <a href="seguros.html" id="m-seguros">Seguros</a>
+    </nav>
+</header>
+
 <div class="container">
-    <main>
-        <article>
-            <img src="https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?q=80&w=1200&auto=format&fit=crop" alt="Ahorro inteligente" class="article-main-img">
-            <h1>Estrategias de Ahorro Inteligente para 2026</h1>
-            <p>El ahorro no es lo que sobra después de gastar; es lo que separas primero para garantizar tu paz mental futura. En esta guía exploramos los métodos más efectivos para construir tu fondo de emergencia.</p>
-            
-            <div class="adsense-placeholder" style="width: 300px; height: 250px; float: left; margin-right: 25px;">AdSense</div>
-
-            <h2>El Método 50/30/20: Tu Mapa Financiero</h2>
-            <p>Este sistema divide tus ingresos en tres categorías claras, permitiéndote disfrutar del presente mientras aseguras el mañana:</p>
-            
-            <ul style="list-style: none; padding: 0;">
-                <li style="background: #e9ecef; padding: 15px; margin-bottom: 10px; border-left: 5px solid var(--verde-dinero);"><strong>50% Necesidades:</strong> Renta, servicios, comida y transporte.</li>
-                <li style="background: #e9ecef; padding: 15px; margin-bottom: 10px; border-left: 5px solid var(--azul-marino);"><strong>30% Deseos:</strong> Entretenimiento, cenas fuera y hobbies.</li>
-                <li style="background: #2D6A4F; color: white; padding: 15px; margin-bottom: 10px; border-left: 5px solid #1b263b;"><strong>20% Ahorro e Inversión:</strong> La clave de tu libertad financiera.</li>
-            </ul>
-
-            <h2>Hacks para Ahorrar en Gastos Fijos</h2>
-            <p>Pequeños ajustes en tus suscripciones y servicios pueden liberar hasta $200 al mes que podrías estar enviando directo a tu cuenta de inversión.</p>
-        </article>
-    </main>
+    <article>
+        <h1>Título de la Sección</h1>
+        <p>Contenido detallado para tus usuarios...</p>
+    </article>
 </div>
+
+</body>
+</html>
