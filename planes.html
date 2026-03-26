@@ -3,48 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Planes VIP | Prosperidad Inteligente</title>
+    <title>Suscripción VIP | Prosperidad Inteligente</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
     <style>
-        :root { --azul: #101827; --verde: #10B981; --gris: #F9FAFB; --blanco: #FFFFFF; }
+        :root { --azul: #101827; --verde: #10B981; --gris: #F9FAFB; }
         * { box-sizing: border-box; margin: 0; padding: 0; }
-        body { font-family: 'Poppins', sans-serif; background: var(--gris); color: #4B5563; line-height: 1.6; }
+        body { font-family: 'Poppins', sans-serif; background: var(--gris); display: flex; align-items: center; justify-content: center; min-height: 100vh; }
         
-        header { background: var(--azul); padding: 1.2rem 8%; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; z-index: 1000; }
-        .logo { color: white; font-size: 1.4rem; font-weight: 700; text-decoration: none; }
-        .logo strong { color: var(--verde); }
-        nav { display: flex; gap: 10px; }
-        nav a { color: rgba(255,255,255,0.7); text-decoration: none; font-size: 0.9rem; padding: 8px 16px; border-radius: 8px; border: 1px solid transparent; transition: 0.3s; }
-        
-        .container { max-width: 800px; margin: 60px auto; padding: 0 20px; text-align: center; }
-        
-        /* Tarjeta de Precio Premium */
-        .pricing-card { 
-            background: white; 
-            padding: 50px; 
-            border-radius: 20px; 
-            box-shadow: 0 20px 40px rgba(0,0,0,0.1); 
+        .plan-card {
+            background: white;
+            padding: 50px;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            text-align: center;
+            max-width: 400px;
             border: 2px solid var(--verde);
-            position: relative;
-            overflow: hidden;
         }
-        .pricing-card h2 { color: var(--azul); font-size: 2rem; margin-bottom: 10px; }
-        .price { font-size: 3.5rem; font-weight: 700; color: var(--azul); margin: 20px 0; }
-        .price span { font-size: 1.2rem; font-weight: 400; color: #9ca3af; }
+        h2 { color: var(--azul); margin-bottom: 10px; }
+        .precio { font-size: 3rem; font-weight: 700; color: var(--azul); margin: 20px 0; }
+        .precio span { font-size: 1rem; color: #999; }
+        ul { list-style: none; text-align: left; margin: 30px 0; }
+        ul li { margin-bottom: 10px; }
+        ul li::before { content: "✅ "; color: var(--verde); }
         
-        .features { list-style: none; padding: 0; margin: 30px 0; text-align: left; }
-        .features li { margin-bottom: 15px; display: flex; align-items: center; font-size: 1.1rem; }
-        .features li::before { content: '✓'; color: var(--verde); font-weight: bold; margin-right: 15px; }
-        
-        .btn-pay { 
-            background: var(--azul); 
-            color: white; 
-            width: 100%; 
-            padding: 20px; 
-            border: none; 
-            border-radius: 12px; 
-            font-size: 1.2rem; 
-            font-weight: 700; 
-            cursor: pointer; 
-            transition: 0.3s; 
+        .btn-pagar {
+            background: var(--azul);
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 10px;
+            width: 100%;
+            font-weight: 700;
+            cursor: pointer;
+            font-size: 1.1rem;
+            transition: 0.3s;
         }
+        .btn-pagar:hover { background: #1f2937; transform: scale(1.02); }
+        .volver { margin-top: 20px; display: block; color: var(--verde); text-decoration: none; font-size: 0.9rem; }
+    </style>
+</head>
+<body>
+
+<div class="plan-card">
+    <h2>Acceso VIP</h2>
+    <p>Únete a la élite financiera</p>
+    <div class="precio">9.99€<span>/mes</span></div>
+    <ul>
+        <li>Guías de ahorro exclusivas</li>
+        <li>Alertas de inversión en tiempo real</li>
+        <li>Calculadoras avanzadas sin límites</li>
+        <li>Soporte personalizado</li>
+    </ul>
+    <button class="btn-pagar" onclick="window.location.href='https://www.paypal.com'">PAGAR AHORA</button>
+    <a href="index.html" class="volver">← Volver atrás</a>
+</div>
+
+</body>
+</html>
