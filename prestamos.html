@@ -1,82 +1,22 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Prosperidad Inteligente</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-    <style>
-        :root {
-            --azul-oscuro: #101827;
-            --verde-acento: #10B981;
-            --gris-fondo: #F9FAFB;
-            --blanco: #FFFFFF;
-            --texto: #4B5563;
-        }
-
-        * { box-sizing: border-box; margin: 0; padding: 0; }
-        body { font-family: 'Poppins', sans-serif; background: var(--gris-fondo); color: var(--texto); line-height: 1.6; }
-
-        /* --- NAVEGACIÓN ESTILO PREMIUM --- */
-        header { 
-            background: var(--azul-oscuro); 
-            padding: 1.2rem 8%; 
-            display: flex; 
-            justify-content: space-between; 
-            align-items: center; 
-            position: sticky; 
-            top: 0; 
-            z-index: 1000; 
-        }
-        .logo { color: white; font-size: 1.4rem; font-weight: 700; text-decoration: none; }
-        .logo strong { color: var(--verde-acento); }
-        
-        nav { display: flex; gap: 10px; }
-        nav a { 
-            color: rgba(255,255,255,0.7); 
-            text-decoration: none; 
-            font-size: 0.9rem; 
-            padding: 8px 16px; 
-            border-radius: 8px; 
-            transition: all 0.3s ease; 
-            border: 1px solid transparent;
-        }
-        nav a:hover { color: white; }
-
-        /* Clase para resaltar la sección actual (Como en tu imagen) */
-        .nav-active { 
-            color: white !important; 
-            background: rgba(16, 185, 129, 0.15); 
-            border: 1px solid var(--verde-acento); 
-        }
-
-        /* --- CUERPO DE LA PÁGINA --- */
-        .container { max-width: 1200px; margin: 50px auto; padding: 0 20px; }
-        article { background: white; padding: 40px; border-radius: 15px; box-shadow: 0 10px 25px rgba(0,0,0,0.05); }
-        h1 { color: var(--azul-oscuro); margin-bottom: 20px; font-size: 2.5rem; }
-        p { margin-bottom: 20px; font-size: 1.1rem; }
-        .main-img { width: 100%; height: 400px; object-fit: cover; border-radius: 12px; margin-bottom: 30px; }
-    </style>
-</head>
 <body>
-
 <header>
     <a href="index.html" class="logo">PROSPERIDAD <strong>INTELIGENTE</strong></a>
     <nav>
-        <a href="index.html" id="m-inicio">Inicio</a>
-        <a href="ahorro.html" id="m-ahorro">Ahorro</a>
-        <a href="inversion.html" id="m-inversion">Inversión</a>
-        <a href="prestamos.html" id="m-prestamos">Préstamos</a>
-        <a href="seguros.html" id="m-seguros">Seguros</a>
+        <a href="index.html">Inicio</a>
+        <a href="ahorro.html">Ahorro</a>
+        <a href="inversion.html">Inversión</a>
+        <a href="prestamos.html" class="nav-active">Préstamos</a>
+        <a href="seguros.html">Seguros</a>
     </nav>
 </header>
-
 <div class="container">
     <article>
-        <h1>Título de la Sección</h1>
-        <p>Contenido detallado para tus usuarios...</p>
+        <h1>Comparativa de Préstamos 2026</h1>
+        <table style="width:100%; border-collapse: collapse; margin-top:20px;">
+            <tr style="background:#101827; color:white;"><th style="padding:10px;">Tipo</th><th style="padding:10px;">Tasa</th></tr>
+            <tr style="border-bottom:1px solid #ddd;"><td style="padding:10px;">Hipotecario</td><td style="padding:10px; color:#10B981; font-weight:bold;">8.5%</td></tr>
+            <tr style="border-bottom:1px solid #ddd;"><td style="padding:10px;">Personal</td><td style="padding:10px; color:#10B981; font-weight:bold;">15%</td></tr>
+        </table>
     </article>
 </div>
-
 </body>
-</html>
