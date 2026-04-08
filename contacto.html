@@ -1,67 +1,47 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <link rel="icon" type="image/png" href="favicon.png">
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7800250286102140" crossorigin="anonymous"></script>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto | Prosperidad Inteligente</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-    <style>
-        :root { --azul: #101827; --verde: #10B981; --gris: #F9FAFB; }
-        body { font-family: 'Poppins', sans-serif; background: var(--gris); color: #4B5563; line-height: 1.6; margin: 0; }
-        header { background: var(--azul); padding: 1rem 8%; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; z-index: 1000; }
-        .logo { color: white; font-size: 1.4rem; font-weight: 700; text-decoration: none; }
-        .logo strong { color: var(--verde); }
-        nav a { color: rgba(255,255,255,0.8); text-decoration: none; font-size: 0.9rem; margin-left: 20px; padding: 8px 15px; border-radius: 8px; transition: 0.3s; border: 1px solid transparent; }
-        .nav-active { background: rgba(16, 185, 129, 0.2); border: 1px solid var(--verde); color: white !important; }
-        nav a:hover { color: white; border: 1px solid var(--verde); }
-        .container { max-width: 600px; margin: 60px auto; padding: 40px; background: white; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.08); text-align: center; }
-        h1 { color: var(--azul); font-size: 2rem; margin-bottom: 10px; }
-        p { margin-bottom: 30px; color: #6B7280; }
-        .contact-info { background: var(--gris); padding: 20px; border-radius: 12px; border: 1px solid #E5E7EB; margin-bottom: 20px; }
-        .contact-info strong { color: var(--verde); display: block; font-size: 1.1rem; }
-        .btn-back { display: inline-block; margin-top: 20px; padding: 10px 25px; background: var(--verde); color: white; text-decoration: none; border-radius: 8px; font-weight: 600; transition: 0.3s; }
-        .btn-back:hover { background: #059669; transform: translateY(-2px); }
-        footer { background: #111; color: white; padding: 30px; text-align: center; margin-top: 60px; font-size: 0.9rem; }
-    </style>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-<header>
-    <a href="index.html" class="logo">PROSPERIDAD <strong>INTELIGENTE</strong></a>
-    <nav>
-        <a href="index.html">Inicio</a>
-        <a href="ahorro.html">Ahorro</a>
-        <a href="inversion.html">Inversión</a>
-        <a href="prestamos.html">Préstamos</a>
-        <a href="seguros.html">Seguros</a>
-        <a href="blog.html">Blog</a>
-        <a href="contacto.html" class="nav-active">Contacto</a>
-    </nav>
-</header>
+    <header>
+        <nav class="container">
+            <div class="logo">Prosperidad<span>Inteligente</span></div>
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="fondo-emergencia.html">Finanzas</a></li>
+                <li><a href="articulo-mentalidad.html">Mentalidad</a></li>
+                <li><a href="articulo-inversion.html">Inversión</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<div class="container">
-    <h1>¿Hablamos?</h1>
-    <p>Si tienes dudas sobre ahorro, inversión o quieres colaborar con nosotros, estamos a un clic de distancia.</p>
-    
-    <div class="contact-info">
-        <strong>Correo ElectrónICO</strong>
-        <span>info@prosperidadinteligente.es</span>
-    </div>
+    <main class="container" style="max-width: 600px; padding: 80px 0; text-align: center;">
+        <h1 style="font-size: 3rem; margin-bottom: 20px;">¿Hablamos?</h1>
+        <p style="color: #666; margin-bottom: 40px;">Si tienes dudas sobre ahorro, inversión o quieres colaborar con nosotros, estamos a un clic de distancia.</p>
 
-    <div class="contact-info">
-        <strong>Horario de Atención</strong>
-        <span>Lunes a Viernes: 9:00 - 18:00</span>
-    </div>
+        <div style="background: #fff; padding: 40px; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); margin-bottom: 20px;">
+            <h3 style="color: #27ae60; margin-bottom: 10px;">Correo Electrónico</h3>
+            <p style="font-size: 1.2rem;">info@prosperidadinteligente.es</p>
+        </div>
 
-    <a href="index.html" class="btn-back">Volver al Inicio</a>
-</div>
+        <div style="background: #fff; padding: 40px; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.05);">
+            <h3 style="color: #27ae60; margin-bottom: 10px;">Horario de Atención</h3>
+            <p style="font-size: 1.1rem;">Lunes a Viernes: 9:00 - 18:00</p>
+        </div>
+    </main>
 
-<footer>
-    <p>&copy; 2026 Prosperidad Inteligente - Educación Financiera para todos.</p>
-</footer>
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Prosperidad Inteligente. <a href="privacidad.html">Privacidad</a> | <a href="cookies.html">Cookies</a></p>
+        </div>
+    </footer>
 
 </body>
 </html>
