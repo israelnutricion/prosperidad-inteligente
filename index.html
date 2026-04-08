@@ -1,97 +1,61 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7800250286102140" crossorigin="anonymous"></script>
-    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" href="favicon.png">
-    <title>Prosperidad Inteligente | Tu Libertad Financiera</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-    <style>
-        :root { --azul: #101827; --verde: #10B981; --gris: #F9FAFB; }
-        body { font-family: 'Poppins', sans-serif; background: var(--gris); color: #4B5563; line-height: 1.6; margin: 0; }
-        
-        header { background: var(--azul); padding: 1.2rem 8%; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; z-index: 1000; }
-        .logo { color: white; font-size: 1.5rem; font-weight: 700; text-decoration: none; }
-        .logo strong { color: var(--verde); }
-        
-        nav a { color: rgba(255,255,255,0.8); text-decoration: none; font-size: 0.95rem; margin-left: 20px; padding: 8px 15px; border-radius: 8px; transition: 0.3s; }
-        nav a:hover { color: white; background: rgba(16, 185, 129, 0.1); }
-        .nav-active { background: rgba(16, 185, 129, 0.2); border: 1px solid var(--verde); color: white !important; }
-
-        .hero { background: var(--azul); color: white; padding: 60px 8%; text-align: center; border-bottom: 8px solid var(--verde); }
-        .hero h1 { font-size: 2.8rem; margin: 0; line-height: 1.2; }
-
-        .container { max-width: 1100px; margin: 40px auto; padding: 0 20px; }
-        
-        /* SECCIONES DE TEXTO */
-        .seccion-finanzas { background: white; padding: 35px; border-radius: 20px; margin-bottom: 25px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); border-left: 6px solid var(--verde); }
-        .seccion-finanzas h2 { color: var(--azul); margin-top: 0; display: flex; align-items: center; gap: 10px; }
-        .seccion-finanzas p { margin-bottom: 0; }
-
-        footer { background: #111; color: white; padding: 50px 20px; text-align: center; margin-top: 60px; }
-        .footer-links a { color: #9CA3AF; text-decoration: none; margin: 0 10px; font-size: 0.85rem; }
-    </style>
+    <title>Prosperidad Inteligente | Finanzas y Bienestar</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-<header>
-    <a href="index.html" class="logo">PROSPERIDAD <strong>INTELIGENTE</strong></a>
-    <nav>
-        <a href="index.html" class="nav-active">Inicio</a>
-        <a href="ahorro.html">Ahorro</a>
-        <a href="inversion.html">Inversión</a>
-        <a href="prestamos.html">Préstamos</a>
-        <a href="seguros.html">Seguros</a>
-        <a href="blog.html">Blog</a>
-        <a href="contacto.html">Contacto</a>
-    </nav>
-</header>
+    <header>
+        <nav class="container">
+            <div class="logo">Prosperidad<span>Inteligente</span></div>
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="#finanzas">Finanzas</a></li>
+                <li><a href="#bienestar">Bienestar</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<section class="hero">
-    <h1>Tu Guía Hacia la Prosperidad</h1>
-    <p>Educación financiera clara para tomar mejores decisiones en 2026.</p>
-</section>
+    <main class="container">
+        <section class="hero">
+            <h1>Domina tu economía, potencia tu mente</h1>
+            <p>Estrategias probadas para alcanzar la libertad financiera y el equilibrio personal.</p>
+        </section>
 
-<div class="container">
-    
-    <div class="seccion-finanzas">
-        <h2>💰 Ahorro Inteligente</h2>
-        <p>El ahorro es la base de cualquier fortuna. No se trata de privarse de todo, sino de optimizar cada euro. Aprende a crear un presupuesto que funcione para ti y a reducir gastos innecesarios sin bajar tu calidad de vida.</p>
-    </div>
+        <section class="articles-grid">
+            <article class="card">
+                <div class="card-tag">Finanzas</div>
+                <h3>5 Reglas de Oro para Ahorrar en 2026</h3>
+                <p>Descubre cómo optimizar tus ingresos mensuales con el método del 50/30/20 adaptado a la inflación actual...</p>
+                <a href="articulos/ahorro-2026.html" class="btn">Leer más</a>
+            </article>
 
-    <div class="seccion-finanzas">
-        <h2>📈 Inversión y Patrimonio</h2>
-        <p>Hacer que tu dinero trabaje por ti es la clave de la libertad financiera. Exploramos desde fondos indexados y acciones hasta el poder del interés compuesto para multiplicar tus ahorros a largo plazo.</p>
-    </div>
+            <article class="card">
+                <div class="card-tag">Mentalidad</div>
+                <h3>Psicología del Dinero: Rompe tus Creencias</h3>
+                <p>¿Por qué te cuesta retener el capital? Analizamos los sesgos cognitivos que te impiden prosperar...</p>
+                <a href="articulos/psicologia-dinero.html" class="btn">Leer más</a>
+            </article>
 
-    <div class="seccion-finanzas">
-        <h2>🗓️ Planes de Futuro</h2>
-        <p>La jubilación y los objetivos a largo plazo requieren una estrategia sólida. Analizamos los mejores planes de pensiones y herramientas de previsión social para que tu futuro esté asegurado desde hoy mismo.</p>
-    </div>
+            <article class="card">
+                <div class="card-tag">Inversión</div>
+                <h3>Invertir en Fondos Indexados desde Cero</h3>
+                <p>Guía paso a paso para principiantes que buscan rentabilidad pasiva a largo plazo sin complicaciones...</p>
+                <a href="articulos/fondos-indexados.html" class="btn">Leer más</a>
+            </article>
+        </section>
+    </main>
 
-    <div class="seccion-finanzas">
-        <h2>🛡️ Seguros y Protección</h2>
-        <p>Proteger lo que más quieres es fundamental. Te ayudamos a entender qué seguros son realmente necesarios (vida, hogar, salud) y cómo elegir las coberturas que mejor protejan tu patrimonio ante imprevistos.</p>
-    </div>
-
-    <div class="seccion-finanzas">
-        <h2>🏦 Préstamos e Hipotecas</h2>
-        <p>El crédito puede ser una herramienta poderosa o una trampa peligrosa. Analizamos cómo gestionar préstamos personales, entender los tipos de interés de las hipotecas y cómo salir de deudas de forma eficiente.</p>
-    </div>
-
-</div>
-
-<footer>
-    <p>PROSPERIDAD <strong>INTELIGENTE</strong></p>
-    <div class="footer-links">
-        <a href="privacidad.html">Privacidad</a>
-        <a href="cookies.html">Cookies</a>
-        <a href="contacto.html">Contacto</a>
-    </div>
-    <p style="color: #4B5563; font-size: 0.8rem; margin-top: 20px;">&copy; 2026 Prosperidad Inteligente. Tu libertad empieza aquí.</p>
-</footer>
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Prosperidad Inteligente. <a href="privacidad.html">Privacidad</a> | <a href="cookies.html">Cookies</a></p>
+        </div>
+    </footer>
 
 </body>
 </html>
