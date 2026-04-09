@@ -15,5 +15,33 @@
         <p>Lo ideal es tener entre 3 y 6 meses de tus gastos mensuales guardados en una cuenta líquida y de fácil acceso.</p>
         <a href="blog.html" class="btn">← Volver al Blog</a>
     </div>
+    <div id="cookie-banner" class="cookie-banner">
+        <p>Utilizamos cookies propias y de terceros (como Google AdSense) para personalizar contenido, mostrar anuncios relevantes y analizar nuestro tráfico. <a href="cookies.html">Más información</a>.</p>
+        <div class="cookie-buttons">
+            <button id="accept-cookies" class="btn" style="border:none; cursor:pointer;">Aceptar</button>
+            <button id="reject-cookies" class="btn-rechazar">Rechazar</button>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            // Comprueba si el usuario ya aceptó/rechazó antes
+            if (!localStorage.getItem("cookieConsent")) {
+                document.getElementById("cookie-banner").style.display = "flex";
+            }
+
+            // Acción al hacer clic en Aceptar
+            document.getElementById("accept-cookies").addEventListener("click", function() {
+                localStorage.setItem("cookieConsent", "true");
+                document.getElementById("cookie-banner").style.display = "none";
+            });
+
+            // Acción al hacer clic en Rechazar
+            document.getElementById("reject-cookies").addEventListener("click", function() {
+                localStorage.setItem("cookieConsent", "false");
+                document.getElementById("cookie-banner").style.display = "none";
+            });
+        });
+    </script>
 </body>
 </html>
