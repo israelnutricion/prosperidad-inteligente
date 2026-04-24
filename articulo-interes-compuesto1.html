@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Interés Compuesto: La Octava Maravilla | Prosperidad Inteligente</title>
+    <meta name="description" content="Aprende cómo funciona el interés compuesto y cómo usarlo para multiplicar tus ahorros y alcanzar la libertad financiera a largo plazo.">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="favicon.png" type="image/png">
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <a href="index.html" class="logo" style="text-decoration: none;">Prosperidad<span>Inteligente</span></a>
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="fondo-emergencia.html">Finanzas</a></li>
+                <li><a href="articulo-mentalidad.html">Mentalidad</a></li>
+                <li><a href="articulo-inversion.html">Inversión</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container" style="max-width: 850px; padding: 50px 0;">
+        <article>
+            <div style="background-color: #eef9f1; color: #27ae60; display: inline-block; padding: 5px 15px; border-radius: 20px; font-weight: bold; margin-bottom: 20px;">INVERSIÓN</div>
+            <h1 style="font-size: 3rem; line-height: 1.2; margin-bottom: 20px;">El poder del Interés Compuesto: Hazte rico mientras duermes</h1>
+            <p><i>Por el equipo editorial de Prosperidad Inteligente • Actualizado: Abril 2026</i></p>
+            <hr style="border: 0; border-top: 1px solid #eee; margin-bottom: 40px;">
+
+            <img src="foto-interes-compuesto.png" alt="Gráfica exponencial del interés compuesto" style="width: 100%; height: auto; display: block; margin-bottom: 40px; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.05);">
+
+            <p>Albert Einstein dijo una vez que el interés compuesto es la octava maravilla del mundo. "El que lo entiende, lo gana; el que no, lo paga". Pero, ¿por qué es tan importante para tu bolsillo? Porque es la diferencia entre trabajar por el dinero o que el <strong>dinero trabaje para ti</strong>.</p>
+
+            <h2>¿Qué es el interés compuesto?</h2>
+            <p>A diferencia del interés simple (donde solo cobras intereses sobre tu capital inicial), el interés compuesto consiste en reinvertir los intereses generados. Esto crea una bola de nieve: el segundo año cobras intereses sobre tu capital más los intereses del primer año.</p>
+
+            <h2>El secreto: Tiempo por encima de cantidad</h2>
+            <p>Imagina que inviertes 200€ al mes desde los 25 años. A los 65 años, con un 7% de interés anual, tendrías unos <strong>525.000€</strong>. Si empiezas a los 35, solo tendrías 240.000€. ¡Esos 10 años de diferencia valen casi 300.000€!</p>
+
+            <div style="background: #eef9f1; padding: 25px; border-radius: 10px; margin: 40px 0;">
+                <p><strong>Inversión Inteligente:</strong> No esperes a tener mucho dinero para empezar. Empieza hoy mismo con lo que tengas, aunque sean 50€. El tiempo es el ingrediente más valioso de esta receta.</p>
+            </div>
+        </article>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Prosperidad Inteligente. <a href="sobre-nosotros.html">Sobre Nosotros</a> | <a href="privacidad.html">Privacidad</a> | <a href="cookies.html">Cookies</a></p>
+        </div>
+    </footer>
+    <div id="cookie-banner" class="cookie-banner">
+        <p>Utilizamos cookies propias y de terceros para personalizar contenido y anuncios. <a href="cookies.html">Más información</a>.</p>
+        <div class="cookie-buttons">
+            <button id="accept-cookies" class="btn" style="border:none; cursor:pointer; background-color: var(--accent); color: white; padding: 10px 15px; border-radius: 5px;">Aceptar</button>
+            <button id="reject-cookies" class="btn-rechazar" style="background-color: #555; color: white; padding: 10px 15px; border: none; border-radius: 5px; cursor: pointer;">Rechazar</button>
+        </div>
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            if (!localStorage.getItem("cookieConsent")) { document.getElementById("cookie-banner").style.display = "flex"; }
+            document.getElementById("accept-cookies").addEventListener("click", function() { localStorage.setItem("cookieConsent", "true"); document.getElementById("cookie-banner").style.display = "none"; });
+            document.getElementById("reject-cookies").addEventListener("click", function() { localStorage.setItem("cookieConsent", "false"); document.getElementById("cookie-banner").style.display = "none"; });
+        });
+    </script>
+</body>
+</html>
