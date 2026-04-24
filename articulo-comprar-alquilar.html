@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comprar vs Alquilar en España 2026 | Prosperidad Inteligente</title>
+    <meta name="description" content="Descubre matemáticamente si te sale más rentable comprar una casa o vivir de alquiler en España. Desmontamos el mito de 'alquilar es tirar el dinero'.">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="favicon.png" type="image/png">
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <a href="index.html" class="logo" style="text-decoration: none;">Prosperidad<span>Inteligente</span></a>
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="fondo-emergencia.html">Finanzas</a></li>
+                <li><a href="articulo-mentalidad.html">Mentalidad</a></li>
+                <li><a href="articulo-inversion.html">Inversión</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container" style="max-width: 850px; padding: 50px 0;">
+        <article>
+            <div style="background-color: #eef9f1; color: #27ae60; display: inline-block; padding: 5px 15px; border-radius: 20px; font-weight: bold; margin-bottom: 20px;">VIVIENDA</div>
+            <h1 style="font-size: 3rem; line-height: 1.2; margin-bottom: 20px;">Comprar vs Alquilar en España (2026): La guía matemática</h1>
+            <p><i>Por el equipo editorial de Prosperidad Inteligente • Actualizado: Abril 2026</i></p>
+            <hr style="border: 0; border-top: 1px solid #eee; margin-bottom: 40px;">
+
+            <img src="foto-comprar-alquilar.png" alt="Decisión financiera entre comprar o alquilar casa" style="width: 100%; height: auto; display: block; margin-bottom: 40px; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.05);">
+
+            <p>"Alquilar es tirar el dinero". Seguro que has escuchado esta frase de boca de tus padres o abuelos. Sin embargo, en el mercado inmobiliario de 2026, con los tipos de interés actuales y la inflación, esta afirmación es un mito peligroso si no se hacen los números correctamente.</p>
+
+            <h2>Los gastos ocultos de comprar</h2>
+            <p>Cuando compras una casa, no solo pagas la hipoteca. Estás asumiendo una serie de costes hundidos que el inquilino jamás paga:</p>
+            <ul style="line-height: 1.8;">
+                <li><strong>Impuestos y Notaría:</strong> Alrededor del 10% del valor de la vivienda al comprarla.</li>
+                <li><strong>Mantenimiento y Derramas:</strong> Arreglar calderas, pintar, arreglar el tejado del edificio...</li>
+                <li><strong>IBI y Seguros:</strong> Impuestos anuales y seguros de hogar vinculados.</li>
+                <li><strong>Intereses del banco:</strong> El coste del dinero que te presta la entidad.</li>
+            </ul>
+
+            <h2>La Regla del 5%</h2>
+            <p>Una forma rápida de saber qué compensa más es la regla del 5%. Calcula el 5% del valor de la casa que quieres comprar y divídelo entre 12 meses. Si el alquiler de una casa similar en esa misma zona cuesta <strong>menos</strong> que esa cifra, financieramente te sale más a cuenta alquilar e invertir la diferencia en bolsa (fondos indexados). Si cuesta <strong>más</strong>, es momento de comprar.</p>
+
+            <div style="background: #eef9f1; padding: 25px; border-radius: 10px; margin: 30px 0;">
+                <p><strong>💡 Flexibilidad:</strong> El alquiler te permite mudarte por trabajo o necesidades vitales en cualquier momento. Comprar te ancla a un lugar. La decisión no es solo financiera, también es de estilo de vida.</p>
+            </div>
+        </article>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Prosperidad Inteligente. <a href="sobre-nosotros.html">Sobre Nosotros</a> | <a href="privacidad.html">Privacidad</a> | <a href="cookies.html">Cookies</a></p>
+        </div>
+    </footer>
+    <div id="cookie-banner" class="cookie-banner">
+        <p>Utilizamos cookies propias y de terceros para personalizar contenido y anuncios. <a href="cookies.html">Más información</a>.</p>
+        <div class="cookie-buttons">
+            <button id="accept-cookies" class="btn" style="border:none; cursor:pointer; background-color: var(--accent); color: white; padding: 10px 15px; border-radius: 5px;">Aceptar</button>
+            <button id="reject-cookies" class="btn-rechazar" style="background-color: #555; color: white; padding: 10px 15px; border: none; border-radius: 5px; cursor: pointer;">Rechazar</button>
+        </div>
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            if (!localStorage.getItem("cookieConsent")) { document.getElementById("cookie-banner").style.display = "flex"; }
+            document.getElementById("accept-cookies").addEventListener("click", function() { localStorage.setItem("cookieConsent", "true"); document.getElementById("cookie-banner").style.display = "none"; });
+            document.getElementById("reject-cookies").addEventListener("click", function() { localStorage.setItem("cookieConsent", "false"); document.getElementById("cookie-banner").style.display = "none"; });
+        });
+    </script>
+</body>
+</html>
