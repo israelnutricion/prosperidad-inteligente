@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gastos Hormiga: Cómo ahorrar 2000€ | Prosperidad Inteligente</title>
+    <meta name="description" content="Aprende a identificar y eliminar los gastos hormiga que destruyen tus ahorros cada mes. Estrategias prácticas para ahorrar sin esfuerzo.">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="favicon.png" type="image/png">
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <a href="index.html" class="logo" style="text-decoration: none;">Prosperidad<span>Inteligente</span></a>
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="fondo-emergencia.html">Finanzas</a></li>
+                <li><a href="articulo-mentalidad.html">Mentalidad</a></li>
+                <li><a href="articulo-inversion.html">Inversión</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container" style="max-width: 850px; padding: 50px 0;">
+        <article>
+            <div style="background-color: #eef9f1; color: #27ae60; display: inline-block; padding: 5px 15px; border-radius: 20px; font-weight: bold; margin-bottom: 20px;">AHORRO</div>
+            <h1 style="font-size: 3rem; line-height: 1.2; margin-bottom: 20px;">Gastos Hormiga y Vampiros Financieros: Cómo recuperar 2.000€ al año</h1>
+            <p><i>Por el equipo editorial de Prosperidad Inteligente • Actualizado: Abril 2026</i></p>
+            <hr style="border: 0; border-top: 1px solid #eee; margin-bottom: 40px;">
+
+            <img src="foto-gastos-hormiga.png" alt="Gastos hormiga que vacían tu cartera" style="width: 100%; height: auto; display: block; margin-bottom: 40px; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.05);">
+
+            <p>¿Alguna vez te has preguntado por qué el dinero "vuela" a mitad de mes aunque no hayas hecho ninguna compra grande? Bienvenido al mundo de los <strong>gastos hormiga</strong>. Pequeños desembolsos diarios que parecen inofensivos, pero que sumados al final del año, podrían pagarte unas vacaciones de lujo o la entrada de un coche.</p>
+
+            <h2>¿Qué son los gastos hormiga?</h2>
+            <p>Son compras de bajo coste que realizamos casi por impulso o costumbre. El café de media mañana, el snack de la máquina, las suscripciones digitales que no usamos o las comisiones bancarias por un mantenimiento que no debería existir.</p>
+
+            <h2>El impacto real: Matemáticas que asustan</h2>
+            <p>Un café de 2,50€ cada día laboral parece poco. Pero haz el cálculo: 2,50€ x 22 días al mes = 55€. Al año son <strong>660€</strong>. Si sumas una suscripción de 15€ que no ves y un par de comidas a domicilio innecesarias, estás tirando más de 1.800€ al año.</p>
+
+            <div style="background: #fdfae6; padding: 25px; border-radius: 10px; border-left: 5px solid #f1c40f; margin: 30px 0;">
+                <p><strong>Vampiros Financieros:</strong> Son gastos fijos que te chupan la sangre (el dinero) sin que te des cuenta. Revisa tu factura de la luz, el seguro del coche o la tarifa del móvil. Llamar para negociar una rebaja una vez al año puede ahorrarte 400€ anuales con solo una hora de esfuerzo.</p>
+            </div>
+        </article>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Prosperidad Inteligente. <a href="sobre-nosotros.html">Sobre Nosotros</a> | <a href="privacidad.html">Privacidad</a> | <a href="cookies.html">Cookies</a></p>
+        </div>
+    </footer>
+    <div id="cookie-banner" class="cookie-banner">
+        <p>Utilizamos cookies propias y de terceros para personalizar contenido y anuncios. <a href="cookies.html">Más información</a>.</p>
+        <div class="cookie-buttons">
+            <button id="accept-cookies" class="btn" style="border:none; cursor:pointer; background-color: var(--accent); color: white; padding: 10px 15px; border-radius: 5px;">Aceptar</button>
+            <button id="reject-cookies" class="btn-rechazar" style="background-color: #555; color: white; padding: 10px 15px; border: none; border-radius: 5px; cursor: pointer;">Rechazar</button>
+        </div>
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            if (!localStorage.getItem("cookieConsent")) { document.getElementById("cookie-banner").style.display = "flex"; }
+            document.getElementById("accept-cookies").addEventListener("click", function() { localStorage.setItem("cookieConsent", "true"); document.getElementById("cookie-banner").style.display = "none"; });
+            document.getElementById("reject-cookies").addEventListener("click", function() { localStorage.setItem("cookieConsent", "false"); document.getElementById("cookie-banner").style.display = "none"; });
+        });
+    </script>
+</body>
+</html>
